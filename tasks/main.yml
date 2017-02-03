@@ -9,6 +9,10 @@
   include: "Debian.yml"
   when: ansible_os_family == "Debian"
 
+- name: "Install the correct repository"
+  include: "Archlinux.yml"
+  when: ansible_os_family == "Archlinux"
+
 - name: "Copy the template for versions < 0.10.0"
   template:
     src: etc-opt-telegraf-telegraf.conf.j2

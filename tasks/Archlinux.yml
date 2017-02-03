@@ -1,0 +1,8 @@
+---
+# in Arch Linux telegraf is available from the AUR. But I have a locally built
+# version in my private repo, so usig the easy button for now.
+#
+# FIXME: build / install from AUR
+
+- name: install telegraf
+  pacman: name=telegraf state=installed
