@@ -4,5 +4,5 @@
 #
 # FIXME: build / install from AUR
 
-- name: install telegraf
-  pacman: name=telegraf state=installed
+- name: install telegraf | Archlinux
+  pacman: name=telegraf-bin state=installed
